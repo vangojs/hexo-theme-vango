@@ -1,0 +1,54 @@
+{
+  "name": "hexo-theme-vango",
+  "version": "0.0.0",
+  "description": "A theme for Hexo",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "glup"
+  },
+  "keywords": [
+    "hexo",
+    "vango",
+    "theme",
+    "hexo-theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vangojs/hexo-theme-vango.git"
+  },
+  "author": "Ying Wang <upcwangying@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vangojs/hexo-theme-vango/issues"
+  },
+  "homepage": "https://github.com/vangojs/hexo-theme-vango",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "/**/!(.libs)/**/*.{js,styl}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "6.7.2",
+    "gulp": "4.0.2",
+    "gulp-eslint": "6.0.0",
+    "gulp-shell": "0.7.1",
+    "js-yaml": "3.13.1",
+    "prettier": "1.19.1",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "3.1.0",
+    "lint-staged": "9.5.0"
+  },
+  "engines": {
+    "node": ">=10.9.0"
+  }
+}

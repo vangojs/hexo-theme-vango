@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+package.json
+/docs
+.dockerignore
+.eslintignore
+.templates
+*.ejs
